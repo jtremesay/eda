@@ -1,0 +1,7 @@
+DESIGN_NICKNAME ?= picorv32
+
+DESIGN_HOME   ?= $(PWD)/designs
+DESIGN_CONFIG ?= $(DESIGN_HOME)/asap7/$(DESIGN_NICKNAME)/config.mk
+WORK_HOME	 ?= $(PWD)/work
+all:
+	$(MAKE) -C ../openroad-flow-scripts/flow DESIGN_HOME=$(DESIGN_HOME) DESIGN_CONFIG=$(DESIGN_CONFIG) WORK_HOME=$(WORK_HOME)
