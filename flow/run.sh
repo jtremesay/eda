@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
-DESIGN_NAME='picorv32'
+#DESIGN_NAME='picorv32'
+DESIGN_NAME='picosoc'
 PLATFORM='asap7'
 BASE_DIR=$(pwd)
 
