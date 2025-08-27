@@ -131,7 +131,7 @@ module picosoc (
 			spimemio_cfgreg_sel ? spimemio_cfgreg_do : simpleuart_reg_div_sel ? simpleuart_reg_div_do :
 			simpleuart_reg_dat_sel ? simpleuart_reg_dat_do : 32'h 0000_0000;
 
-	picorv32 #(
+	picorv32 /*#(
 		.STACKADDR(STACKADDR),
 		.PROGADDR_RESET(PROGADDR_RESET),
 		.PROGADDR_IRQ(PROGADDR_IRQ),
@@ -143,7 +143,7 @@ module picosoc (
 		.ENABLE_FAST_MUL(ENABLE_FAST_MUL),
 		.ENABLE_IRQ(1),
 		.ENABLE_IRQ_QREGS(ENABLE_IRQ_QREGS)
-	) cpu (
+	) */ cpu (
 		.clk         (clk        ),
 		.resetn      (resetn     ),
 		.mem_valid   (mem_valid  ),
@@ -208,9 +208,9 @@ module picosoc (
 	always @(posedge clk)
 		ram_ready <= mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS;
 
-	`PICOSOC_MEM #(
+	`PICOSOC_MEM /* #(
 		.WORDS(MEM_WORDS)
-	) memory (
+	) */memory (
 		.clk(clk),
 		.wen((mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS) ? mem_wstrb : 4'b0),
 		.addr(mem_addr[23:2]),
