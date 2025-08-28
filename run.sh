@@ -17,5 +17,5 @@ else
 fi
 
 exec make \
-    -C $BASE_DIR/../openroad-flow-scripts/flow \
+    -C $BASE_DIR/openroad-flow-scripts/flow \
     $TARGET
