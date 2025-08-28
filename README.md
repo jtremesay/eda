@@ -4,7 +4,7 @@
 
 ```shell
 $ git clone https://github.com/jtremesay/eda.git eda
-eda $ cd eda
+$ cd eda
 eda $ nix develop
 ```
 
