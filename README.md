@@ -14,6 +14,5 @@ eda $ nix develop
 Start openroad flow:
 
 ```shell
-eda $ cd flow
-eda/flow $ make
+eda $ ./run.sh
 ```
