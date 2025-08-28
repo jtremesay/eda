@@ -1,6 +1,6 @@
 # EDA
 
-![An ASAP7 physical implementation of a PicoRV32 CPU](picosv32.png)
+![An ASAP7 physical implementation of a PicoRV32 CPU](picorv32.png)
 
 ## Set up
 
