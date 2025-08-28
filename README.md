@@ -1,5 +1,7 @@
 # EDA
 
+![An ASAP7 physical implementation of a PicoRV32 CPU](picosv32.png)
+
 ## Set up
 
 ```shell
@@ -8,10 +10,9 @@ $ cd eda
 eda $ nix develop
 ```
 
-
 ## Usage
 
-Start openroad flow:
+Run the flow:
 
 ```shell
 eda $ ./run.sh
