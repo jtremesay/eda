@@ -2,7 +2,7 @@
 set -ex
 
 #DESIGN_NAME='picorv32'
-DESIGN_NAME='picosoc'
+DESIGN_NAME='picosoc_flat'
 PLATFORM='asap7'
 BASE_DIR=$(pwd)
 
